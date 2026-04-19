@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<title>ANAMIKA SANILKUMAR| Portfolio</title>
+</head>
+
+<body>
+
+<nav>
+    <h3>Anamika sanilkumar</h3>
+    <button onclick="toggleMode()">🌙</button>
+
+
+</nav>
+
+<header class="reveal">
+    <h1>Hi, I'm ANAMIKA SANILKUMAR</h1>
+    <p>Computer Science Student | Web Developer</p>
+</header>
+
+<section class="reveal">
+    <h2>About Me</h2>
+    <p>
+        I'm a Computer Science student passionate about building real-world applications.
+        Currently focused on web development and improving problem-solving skills.
+    </p>
+</section>
+
+<section class="reveal">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Number Guessing Game</h3>
+        <p>The user has to guess a randomly generated number within a limited number of attempts.</p>
+        <p><b>Tech:</b> python</p>
+        <a href="https://github.com/anamikasanilkumar/NUMBER-GUESSING-GAME">GitHub</a>
+    </div>
+
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio website to showcase projects and skills.</p>
+        <p>Tech:HTML, CSS, JavaScript</p>
+        <a href="#">GitHub</a>
+    </div>
+    <div class="project">
+        <h3>simple calculator</h3>
+        <p>A simple calculator application for basic arithmetic operations.</p>
+        <p><b>Tech:</b>HTML,CSS,JavaScript</p>
+        <a href="https://anamikasanilkumar.github.io/simple-calculator/">GitHub</a>
+
+</section>
+
+<section class="reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div>Python</div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>Git</div>
+    </div>
+</section>
+
+<section class="reveal">
+    <h2>Contact</h2>
+    <p>Email: anamikaammu420@gmail.com</p>
+    <p>GitHub:github.com/anamikasanilkumar</p>
+</section>
+<script>
+
+function toggleMode() {
+    document.body.classList.toggle("light");
+}
+
+const elements = document.querySelectorAll(".reveal");
+
+function showOnScroll() {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", showOnScroll);
+showOnScroll();
+</script>
+
+<footer>
+    <p>© 2026 ANAMIKA SANILKUMAR</p>
+</footer>
+</body>
+</html>
